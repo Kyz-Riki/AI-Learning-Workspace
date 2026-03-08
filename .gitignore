@@ -40,8 +40,4 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-FRONTEND_GUIDE.md
-update_frontend.md
-SETUP_COMPLETE.md
-troubleshoo.md
-PROJECT_README.md
+
