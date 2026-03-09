@@ -62,7 +62,6 @@ Salin perintah SQL dari dalam berkas `SUPABASE_SCHEMA.md` dan jalankan pada menu
 Buat berkas `.env.local` pada direktor *root* repositori ini, dan sesuaikan rincian berikut:
 
 ```env
-GEMINI_API_KEY=kunci_api_gemini_anda
 NEXT_PUBLIC_SUPABASE_URL=url_proyek_supabase_anda
 NEXT_PUBLIC_SUPABASE_ANON_KEY=kunci_anon_supabase_anda
 FASTAPI_URL=http://127.0.0.1:8000
