@@ -17,9 +17,38 @@ export interface QuizQuestion {
   explanation: string;
 }
 
+export interface Subject {
+  id: string;
+  user_id: string;
+  name: string;
+  description: string | null;
+  created_at: string;
+}
+
+export interface ScheduleGroup {
+  id: string;
+  user_id: string;
+  name: string;
+  is_active: boolean;
+  created_at: string;
+}
+
+export interface Schedule {
+  id: string;
+  user_id: string;
+  group_id: string;
+  subject_id: string | null;
+  title: string;
+  day_of_week: number;
+  start_time: string;
+  end_time: string;
+  created_at: string;
+}
+
 export interface Workspace {
   id: string;
   user_id: string;
+  subject_id: string;
   title: string;
   file_url: string;
   summary_data: SummaryTopic[];

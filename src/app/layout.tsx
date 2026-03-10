@@ -18,6 +18,9 @@ export const metadata: Metadata = {
     "Transform passive PDFs into interactive AI-powered study workspaces",
 };
 
+import { TopNav } from "@/components/layout/TopNav";
+import { BottomNav } from "@/components/layout/BottomNav";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -26,9 +29,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col bg-slate-950`}
       >
-        {children}
+        <TopNav />
+        <main className="flex-1 flex flex-col">{children}</main>
+        <BottomNav />
       </body>
     </html>
   );
